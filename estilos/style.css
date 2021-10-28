@@ -1,0 +1,8 @@
+#galeria .col-lg-4 {
+    padding: 10px;
+    margin: 0px;
+}
+#galeria img {
+    width: 100%;
+    height: auto;
+}
