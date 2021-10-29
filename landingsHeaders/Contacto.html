@@ -12,66 +12,44 @@
   </head>
 
 <body>
-
    <!-- Header -->
+   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-        <span class="fs-4">Lorenzo del Oeste</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/Index.html" class="nav-link" aria-current="page">Proyectos</a></li>
-        <li class="nav-item"><a href="/landingsHeaders/Informacion.html" class="nav-link">Info</a></li>
-        <li class="nav-item"><a href="/landingsHeaders/Contacto.html" class="nav-link">Contacto</a></li>
-        <li class="nav-item"><a href="/landingsHeaders/Descargas.html" class="nav-link">Descargas</a></li>
-      </ul>
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <span class="fs-4">Lorenzo del Oeste</span>
+        </a>
+  
+        <ul class="nav nav-pills justify-content-center">
+          <li class="nav-item"><a href="/Index.html" class="nav-link" aria-current="page">Proyectos</a></li>
+          <li class="nav-item"><a href="/landingsHeaders/Informacion.html" class="nav-link">Sobre mi</a></li>
+          <li class="nav-item"><a href="/landingsHeaders/Contacto.html" class="nav-link">Contacto</a></li>
+          <li class="nav-item"><a href="/landingsHeaders/Descargas.html" class="nav-link">Descargas</a></li>
+        </ul>
     </header>
+  </div>
   <!-- finHeader -->
 
-  <div id="container" class="container-xl mt-5 mb-5">
-    <div>
-      
-        <h1>Trabajemos juntos!</h1>
-        <span class="red">Completa el siguiente formulario y me pondré en contacto a la brevedad contigo.</span>
-    </div>
-            
-    <!-- INICIO FORMULARIO HTML -->
-<form method="POST" action="/landingsHeaders/formularioContacto.php" class="needs-validation" novalidate>
-
-  <div class="form-row mt-5">
-      <div class="col-md-4 mb-3">
-          <label for="validarNombre">Nombre y Apellido:</label>
-          <input type="text" class="form-control" id="names" name="nombre" required>
-      </div>
-  </div>
-
-  <div class="form-row">
-      <div class="col-md-4 mb-3">
-          <label for="validarEmail">Email:</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-      </div>
-  </div>
-
-  <div class="form-group">
-      <label for="validationMensaje">Mensaje:</label>
-      <textarea class="form-control" id="mensaje"  rows="3" min="25" name="mensaje" required></textarea>
-  </div>
-
-  <div class="form-group mb-10">
-      <button class="btn btn-primary" type="submit" id="btnsend" name="submit">Enviar mensaje</button>
-      <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
-  </div>
-
-</form>
-        <!-- FinForm -->
+  <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">¡Hora de trabajar!</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-4 mb-4">Para cotizaciones por favor incluya una descripción general del proyecto, fecha de entrega y la referencia de mi portafolio más cercana a lo que está buscando. Puede escribirme a mi correo lmbredice@gmail.com o llamarme al 01156930227. </p>
         
-</div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a href="tel:1156930227">
+          <button type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3 fw-bold">Llamar por telefono</button></a>
+          <a href="https://wa.me/5491156930227">
+          <button type="button" class="btn btn-outline-success btn-lg px-4 fw-bold">Mensaje por whatsapp</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
       
    <footer class="py-3 my-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       <li class="nav-item"><a href="/Index.html" class="nav-link px-2 text-muted">Proyectos</a></li>
-      <li class="nav-item"><a href="/landingsHeaders/Informacion.html" class="nav-link px-2 text-muted">Info</a></li>
+      <li class="nav-item"><a href="/landingsHeaders/Informacion.html" class="nav-link px-2 text-muted">Sobre mi</a></li>
       <li class="nav-item"><a href="/landingsHeaders/Contacto.html" class="nav-link px-2 text-muted">Contacto</a></li>
       <li class="nav-item"><a href="/landingsHeaders/Descargas.html" class="nav-link px-2 text-muted">Descargas</a></li>
     </ul>
@@ -80,24 +58,6 @@
     
     
         <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        
-        <script>
-          (function() {
-              'use strict';
-              window.addEventListener('load', function() {
-                  var forms = document.getElementsByClassName('needs-validation');
-                  var validation = Array.prototype.filter.call(forms, function(form) {
-                      form.addEventListener('submit', function(event) {
-                          if (form.checkValidity() === false) {
-                              event.preventDefault();
-                              event.stopPropagation();
-                          }
-                          form.classList.add('was-validated');
-                      }, false);
-                  });
-              }, false);
-          })();
-      </script>
 </body>
 </html>
 
